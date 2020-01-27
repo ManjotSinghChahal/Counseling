@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel_Top_aboutClient"
+    tools:context=".fragment.AboutClient">
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview_aboutClient"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/rel_layout_all"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout_aboutClient"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                app:tabBackground="@drawable/tab_color_selector"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                app:tabIndicatorHeight="0dp"
+                app:tabSelectedTextColor="@color/colorWhite"
+                app:tabTextColor="@color/colorBlack"/>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager_aboutClient"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_420sdp"
+                android:fillViewport="true"
+                android:layout_below="@+id/tabLayout_aboutClient">
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------page 1---------------------------
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lin_layout_personal"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_12sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorBlack"
+                            android:text="Name"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:textColor="@color/colorBlack"
+                            android:text="Country"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:textColor="@color/colorBlack"
+                            android:text="State"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:textColor="@color/colorBlack"
+                            android:text="City"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:textColor="@color/colorBlack"
+                            android:text="Address"/>
+
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:textColor="@color/colorBlack"
+                            android:text="D.O.B"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:textColor="@color/colorBlack"
+                            android:text="Age"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:textColor="@color/colorBlack"
+                            android:text="Email Address"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:textColor="@color/colorBlack"
+                            android:text="Cell Phone"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:textColor="@color/colorBlack"
+                            android:text="Home Phone"/>
+
+
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/rel_name_client"
+                            android:background="@drawable/roundcorners_grey"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:id="@+id/edt_name_client"
+                                android:layout_marginLeft="8dp"
+                                android:textSize="@dimen/_13sdp"
+                                android:hint="Enter your name"
+                                android:layout_centerVertical="true"
+                                android:background="@null" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/rel_name_country"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@drawable/roundcorners_grey"
+                            android:paddingRight="5dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:id="@+id/txtview_name_country"
+                                android:layout_marginLeft="8dp"
+                                android:textSize="@dimen/_13sdp"
+                                android:text=""
+                                android:layout_centerVertical="true"
+                                 />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spinnerCountry"
+                                android:dropDownWidth="match_parent"
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_centerVertical="true"></Spinner>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/rel_name_state"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@drawable/roundcorners_grey"
+                            android:paddingRight="5dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textSize="@dimen/_13sdp"
+                                android:visibility="gone"
+                                android:id="@+id/edt_name_state"
+                                android:layout_marginLeft="8dp"
+                                android:text="Enter your State"
+                                android:layout_centerVertical="true"
+                                />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spinnerSate"
+                                android:textSize="@dimen/_13sdp"
+                                android:dropDownWidth="match_parent"
+                                android:layout_centerVertical="true"></Spinner>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/rel_name_city"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@drawable/roundcorners_grey"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textSize="@dimen/_13sdp"
+                                android:id="@+id/edt_name_city"
+                                android:layout_marginLeft="8dp"
+                                android:hint="Enter your City"
+                                android:layout_centerVertical="true"
+                                android:background="@null" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/rel_name_address"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@drawable/roundcorners_grey"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:id="@+id/edt_name_address"
+                                android:layout_marginLeft="8dp"
+                                android:textSize="@dimen/_13sdp"
+                                android:hint="Enter your Address"
+                                android:layout_centerVertical="true"
+                                android:background="@null" />
+                        </RelativeLayout>
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/rel_name_dob"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@drawable/roundcorners_grey"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_13sdp"
+                                android:id="@+id/txt_name_dob"
+                                android:layout_marginLeft="8dp"
+                                android:hint="Date of Birth"
+                                android:layout_centerVertical="true"
+                                android:background="@null" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/rel_name_age"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@drawable/roundcorners_grey"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textSize="@dimen/_13sdp"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:id="@+id/edt_name_age"
+                                android:layout_marginLeft="8dp"
+                                android:hint="Enter your Age"
+                                android:layout_centerVertical="true"
+                                android:background="@null" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/rel_name_email"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@drawable/roundcorners_grey"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textSize="@dimen/_13sdp"
+                                android:id="@+id/edt_name_email"
+                                android:layout_marginLeft="8dp"
+                                android:inputType="textEmailAddress"
+                                android:hint="Enter your Email Address"
+                                android:layout_centerVertical="true"
+                                android:background="@null" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/rel_cellPhone"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@drawable/roundcorners_grey"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                            <EditText
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:id="@+id/edt_phoneCode_cellPhone"
+                                android:hint="+91"
+                                android:maxLength="5"
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:inputType="number"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:layout_toRightOf="@+id/edt_phoneCode_cellPhone"
+                                android:textSize="@dimen/_13sdp"
+                                android:id="@+id/edt_cellPhone"
+                                android:maxLength="15"
+                                android:inputType="number"
+                                android:hint="Enter Cell Phone"
+                                android:layout_centerVertical="true"
+                                android:background="@null" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/rel_homePhone"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@drawable/roundcorners_grey"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                            <EditText
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:id="@+id/edt_phoneCode_homePhone"
+                                android:hint="+91"
+                                android:textSize="@dimen/_13sdp"
+                                android:maxLength="5"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:inputType="number"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textSize="@dimen/_13sdp"
+                                android:inputType="number"
+                                android:maxLength="15"
+                                android:layout_toRightOf="@+id/edt_phoneCode_homePhone"
+                                android:id="@+id/edt_homePhone"
+                                android:hint="Enter Home Phone"
+                                android:layout_centerVertical="true"
+                                android:background="@null" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/rel_lay_savePersonal"
+                            android:background="@drawable/roundcorners_aqua"
+                            android:layout_marginTop="@dimen/_24sdp"
+                            android:layout_marginRight="@dimen/_12sdp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_24sdp"
+                            android:layout_gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Save"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_14sdp"/>
+                        </RelativeLayout>
+
+                </LinearLayout>
+
+                //----------------Page 2-----------------------------
+
+              <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/lin_layout_medical"
+                    android:orientation="vertical">
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorBlack"
+                                android:text="Preferred method of Contact"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:id="@+id/rel_preferrredContact"
+                                android:background="@drawable/roundcorners_grey"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp">
+
+                                <EditText
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:id="@+id/edt_phoneCode_preferredContact"
+                                    android:hint="+91"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:maxLength="5"
+                                    android:layout_marginLeft="@dimen/_4sdp"
+                                    android:inputType="number"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null"
+                                    />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:inputType="number"
+                                    android:maxLength="15"
+                                    android:layout_toRightOf="@+id/edt_phoneCode_preferredContact"
+                                    android:id="@+id/edt_preferrredContac"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:hint="Enter Home Phone"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorBlack"
+                                android:text="Name of Father"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:id="@+id/rel_fatherName"
+                                android:background="@drawable/roundcorners_grey"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:id="@+id/edt_fatherName"
+                                    android:layout_marginLeft="8dp"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:hint="Enter Name of your Father"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorBlack"
+                                android:text="Mental Health Issue"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:id="@+id/rel_mentalHealth"
+                                android:background="@drawable/roundcorners_grey"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:id="@+id/edt_mentalHealth"
+                                    android:layout_marginLeft="8dp"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:hint="Mental Health Issues"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorBlack"
+                                android:text="Name of Mother"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:id="@+id/rel_motherName"
+                                android:background="@drawable/roundcorners_grey"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:id="@+id/edt_motherName"
+                                    android:layout_marginLeft="8dp"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:hint="Enter Name of your Mother"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="@dimen/_12sdp"
+                      android:layout_marginLeft="@dimen/_12sdp"
+                      android:layout_marginTop="@dimen/_6sdp"
+                      android:orientation="horizontal">
+
+                      <LinearLayout
+                          android:layout_width="0dp"
+                          android:layout_weight="1.2"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:orientation="vertical">
+
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center_vertical"
+                              android:textSize="@dimen/_12sdp"
+                              android:textColor="@color/colorBlack"
+                              android:text="Mental Health Issue"/>
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/_4sdp"
+                          android:layout_gravity="center_vertical"
+                          android:orientation="vertical">
+
+                          <RelativeLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="@dimen/_30sdp"
+                              android:id="@+id/rel_mentalHealthM"
+                              android:background="@drawable/roundcorners_grey"
+                              android:paddingLeft="5dp"
+                              android:paddingRight="5dp">
+                              <EditText
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:singleLine="true"
+                                  android:id="@+id/edt_mentalHealthM"
+                                  android:layout_marginLeft="8dp"
+                                  android:textSize="@dimen/_12sdp"
+                                  android:hint="Mental Health Issues"
+                                  android:layout_centerVertical="true"
+                                  android:background="@null" />
+                          </RelativeLayout>
+                      </LinearLayout>
+                  </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/colorBlack"
+                                android:text="Indicate any medical Diagnosis"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:id="@+id/rel_medicalDiagonosis"
+                                android:background="@drawable/roundcorners_grey"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:id="@+id/edt_medicalDiagonosis"
+                                    android:layout_marginLeft="8dp"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:hint="Medical Diagnosis"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorLightGrey"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_12sdp">
+
+                    </View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:text="@string/therapy_asking_issue"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:background="@drawable/roundcorners_grey">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edt_allIssues"
+                            android:paddingLeft="@dimen/_6sdp"
+                            android:paddingRight="@dimen/_6sdp"
+                            android:paddingTop="@dimen/_6sdp"
+                            android:imeOptions="actionNext"
+                            android:paddingBottom="@dimen/_6sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:background="@null"
+                            android:hint="Write here..."/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/therapy_asking_goals"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:background="@drawable/roundcorners_grey">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edt_therapyGoals"
+                            android:imeOptions="actionDone"
+                            android:paddingLeft="@dimen/_6sdp"
+                            android:paddingRight="@dimen/_6sdp"
+                            android:paddingTop="@dimen/_6sdp"
+                            android:paddingBottom="@dimen/_6sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:background="@null"
+                            android:hint="Write here..."/>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:id="@+id/rel_lay_saveMedical"
+                        android:background="@drawable/roundcorners_aqua"
+                        android:layout_marginTop="@dimen/_24sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_24sdp"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Save"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_14sdp"/>
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </android.support.v4.view.ViewPager>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

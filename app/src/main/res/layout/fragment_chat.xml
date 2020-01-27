@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relTop_chatfragment"
+    tools:context=".fragment.Chat">
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview_chat"
+        android:layout_above="@+id/rel_sendMessage">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/rel_sendMessage"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/chat_layout"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingRight="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/rel_send_btn"
+            android:layout_alignParentRight="true">
+         <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+           android:layout_centerInParent="true"
+            android:background="@drawable/chat_send"/>
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/edt_message"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:hint="Type a message...."/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
